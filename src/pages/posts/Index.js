@@ -52,8 +52,8 @@ function PostIndex() {
                 <thead>
                   <tr>
                     <th>NO.</th>
-                    <th>TITLE</th>
-                    <th>CONTENT</th>
+                    <th>Nama</th>
+                    <th>Judul Buku</th>
                     <th>AKSI</th>
                   </tr>
                 </thead>
