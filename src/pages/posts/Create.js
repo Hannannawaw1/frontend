@@ -28,8 +28,8 @@ function CreatePost() {
     //send data to server
     await axios
       .post("http://localhost:3001/api/posts/store", {
-        title: Nama,
-        content: Judul Buku,
+        title: title,
+        content: content,
       })
       .then(() => {
         //redirect
@@ -59,12 +59,12 @@ function CreatePost() {
 
               <Form onSubmit={storePost}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label>Nama</Form.Label>
+                  <Form.Label>title</Form.Label>
                   <Form.Control type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Masukkan Nama" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                  <Form.Label>Judul Buku</Form.Label>
+                  <Form.Label>content</Form.Label>
                   <Form.Control as="textarea" rows={3} value={content} onChange={(e) => setContent(e.target.value)} placeholder="Masukkan Judul Buku" />
                 </Form.Group>
 
