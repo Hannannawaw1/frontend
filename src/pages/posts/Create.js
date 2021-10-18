@@ -28,8 +28,8 @@ function CreatePost() {
     //send data to server
     await axios
       .post("http://localhost:3001/api/posts/store", {
-        title: title,
-        content: content,
+        title: Nama,
+        content: Judul Buku,
       })
       .then(() => {
         //redirect
