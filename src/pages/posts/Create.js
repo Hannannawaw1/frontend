@@ -59,13 +59,13 @@ function CreatePost() {
 
               <Form onSubmit={storePost}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label>TITLE</Form.Label>
-                  <Form.Control type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Masukkan Title" />
+                  <Form.Label>Nama</Form.Label>
+                  <Form.Control type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Masukkan Nama" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                  <Form.Label>CONTENT</Form.Label>
-                  <Form.Control as="textarea" rows={3} value={content} onChange={(e) => setContent(e.target.value)} placeholder="Masukkan Content" />
+                  <Form.Label>Judul Buku</Form.Label>
+                  <Form.Control as="textarea" rows={3} value={content} onChange={(e) => setContent(e.target.value)} placeholder="Masukkan Judul Buku" />
                 </Form.Group>
 
                 <Button variant="primary" type="submit">
